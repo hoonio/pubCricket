@@ -1,0 +1,20 @@
+<ion-view view-title="Game" class="game-page">
+  <ion-content>
+    <div class="button-bar">
+      <a class="button">{{player1.name}}</a>
+      <a class="button">{{player2.name}}</a>
+    </div>
+
+    <br>
+    <center>legs total legs total</center>
+    <div ng-repeat="score in scores">
+      {{score}}<br>
+    </div>
+    <br> 3 3 2 5
+    <br>
+    <label class="item item-input">
+      <span class="input-label">Points</span>
+      <input ng-model="newScore" ng-change="numberEntered(newScore)" type="number">
+    </label>
+  </ion-content>
+</ion-view>
